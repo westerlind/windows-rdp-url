@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<DOCUMENT Type="Advanced Installer" CreateVersion="18.9" version="21.9" Modules="simple" RootPath="C:\Users\andreas\Desktop" Language="en" Id="{F84670D0-C39C-49D0-9B66-3E2616AE993D}">
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiPropsComponent">
+    <ROW Property="AI_BITMAP_DISPLAY_MODE" Value="0"/>
+    <ROW Property="ALLUSERS" Value="1" MultiBuildValue="DefaultBuild:"/>
+    <ROW Property="ARPCOMMENTS" Value="This installer database contains the logic and data required to install [|ProductName]." ValueLocId="*"/>
+    <ROW Property="Manufacturer" Value="Andreas Westerlind"/>
+    <ROW Property="ProductCode" Value="1033:{D4DDBACB-9AB4-48E5-B1D3-C236DDF39978} " Type="16"/>
+    <ROW Property="ProductLanguage" Value="1033"/>
+    <ROW Property="ProductName" Value="RDP URL Opener"/>
+    <ROW Property="ProductVersion" Value="1.0.0" Options="32"/>
+    <ROW Property="REBOOT" MultiBuildValue="DefaultBuild:ReallySuppress"/>
+    <ROW Property="SecureCustomProperties" Value="OLDPRODUCTS;AI_NEWERPRODUCTFOUND"/>
+    <ROW Property="UpgradeCode" Value="{17B3CC4B-A3E4-4E19-BFFD-994198441DDD}"/>
+    <ROW Property="WindowsType9X" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
+    <ROW Property="WindowsType9XDisplay" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT40" MultiBuildValue="DefaultBuild:Windows NT 4.0" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT40Display" MultiBuildValue="DefaultBuild:Windows NT 4.0" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT50" MultiBuildValue="DefaultBuild:Windows 2000" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT50Display" MultiBuildValue="DefaultBuild:Windows 2000" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT5X" MultiBuildValue="DefaultBuild:Windows XP/2003" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT5XDisplay" MultiBuildValue="DefaultBuild:Windows XP/2003" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT60" MultiBuildValue="DefaultBuild:Windows Vista/Server 2008" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT60Display" MultiBuildValue="DefaultBuild:Windows Vista/Server 2008" ValueLocId="-"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiDirsComponent">
+    <ROW Directory="APPDIR" Directory_Parent="TARGETDIR" DefaultDir="APPDIR:." IsPseudoRoot="1" DirectoryOptions="3"/>
+    <ROW Directory="LocalAppDataFolder" Directory_Parent="TARGETDIR" DefaultDir="LOCALA~1|LocalAppDataFolder" IsPseudoRoot="1"/>
+    <ROW Directory="TARGETDIR" DefaultDir="SourceDir"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.SideBySideGuidComponent">
+    <ROW Component="APPDIR" Value="{0E8A9C58-32B6-4E0A-8841-7FA33ACFC86A}"/>
+    <ROW Component="NoOpenWith" Value="{0B09CB02-403D-4B1A-85C3-F6A680FA860E}"/>
+    <ROW Component="NoOpenWith_1" Value="{A5939E6F-714D-4747-919C-564ECC374746}"/>
+    <ROW Component="NoOpenWith_2"/>
+    <ROW Component="RDPURLOpener" Value="{0079F17B-4C6C-468D-9949-ABECA09B3C19}"/>
+    <ROW Component="RdpOpener.URL_rdp" Value="{80E6A67B-B92F-4DEE-8A22-DA9B7EB44C00}"/>
+    <ROW Component="_" Value="{1B5AE806-EB2C-48F1-ABCA-4723EA317998}"/>
+    <ROW Component="__1" Value="{007B3D95-E125-4834-B023-76BB532787AE}"/>
+    <ROW Component="__2" Value="{837955A3-6A4A-4D13-AA18-AD0099A079B1}"/>
+    <ROW Component="__3" Value="{5730332D-81DF-492C-8981-471BB0EC1907}"/>
+    <ROW Component="__4" Value="{64CAA84A-BE06-49D8-BADA-681E9080F7C0}"/>
+    <ROW Component="__5" Value="{EF46F655-26ED-43CD-852F-CC30D1F44387}"/>
+    <ROW Component="__6" Value="{48CF9F8D-D515-485C-B87C-2F63C9605A54}"/>
+    <ROW Component="__7"/>
+    <ROW Component="rdp_3" Value="{3609871D-E832-4595-A92B-8AB3585E9609}"/>
+    <ROW Component="rdp_1"/>
+    <ROW Component="rdp_2" Value="{29D22BED-7683-45F8-B79D-A9584C98F34C}"/>
+    <ROW Component="rdpurl.bat_1" Value="{97891879-AD6F-4EF6-9D19-AF128E4B0AC8}"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCompsComponent">
+    <ROW Component="APPDIR" ComponentId="{0E8A9C58-32B6-4E0A-8841-7FA33ACFC86A}" Directory_="APPDIR" Attributes="0"/>
+    <ROW Component="LocalSettings" ComponentId="{09390450-258F-4806-9421-14905E200581}" Directory_="APPDIR" Attributes="4" KeyPath="LocalSettings"/>
+    <ROW Component="Microsoft" ComponentId="{BFA6150F-67A2-4608-8B73-6B64E5662BEB}" Directory_="APPDIR" Attributes="4" KeyPath="Microsoft_1"/>
+    <ROW Component="New_Key" ComponentId="{58618992-F195-407A-9742-A9552161E238}" Directory_="APPDIR" Attributes="4" KeyPath="New_Key"/>
+    <ROW Component="NoOpenWith" ComponentId="{0B09CB02-403D-4B1A-85C3-F6A680FA860E}" Directory_="APPDIR" Attributes="4" KeyPath="NoOpenWith"/>
+    <ROW Component="NoOpenWith_1" ComponentId="{A5939E6F-714D-4747-919C-564ECC374746}" Directory_="APPDIR" Attributes="4" KeyPath="NoOpenWith_1"/>
+    <ROW Component="RDPURLOpener" ComponentId="{0079F17B-4C6C-468D-9949-ABECA09B3C19}" Directory_="APPDIR" Attributes="4" KeyPath="RDPURLOpener"/>
+    <ROW Component="RdpOpener.URL" ComponentId="{1BF2B586-2452-4DD6-B85F-C11249DD8F10}" Directory_="APPDIR" Attributes="4" KeyPath="RdpOpener.URL"/>
+    <ROW Component="RdpOpener.URL_1" ComponentId="{13CADC55-B03B-4001-9D2C-EF1D522F2302}" Directory_="APPDIR" Attributes="4" KeyPath="RdpLauncher.URL"/>
+    <ROW Component="Shelll" ComponentId="{2AAA2129-00F2-4EA1-B82B-D0893EAEFE74}" Directory_="APPDIR" Attributes="4" KeyPath="Shelll"/>
+    <ROW Component="Software" ComponentId="{D39CF5AF-96AA-421A-8D1A-BA9982632B4B}" Directory_="APPDIR" Attributes="4" KeyPath="Software_1"/>
+    <ROW Component="URLProtocol" ComponentId="{F00335A0-ED68-4BC8-BF08-C7833F68B0C9}" Directory_="APPDIR" Attributes="4" KeyPath="URLProtocol"/>
+    <ROW Component="Windows" ComponentId="{FDD90B78-B89D-47B8-95FD-A9DD3B7E184C}" Directory_="APPDIR" Attributes="4" KeyPath="Windows_1"/>
+    <ROW Component="RdpOpener.URL_rdp" ComponentId="{80E6A67B-B92F-4DEE-8A22-DA9B7EB44C00}" Directory_="APPDIR" Attributes="4" KeyPath="RdpOpener.URL_2"/>
+    <ROW Component="_" ComponentId="{1B5AE806-EB2C-48F1-ABCA-4723EA317998}" Directory_="APPDIR" Attributes="4" KeyPath="_"/>
+    <ROW Component="__1" ComponentId="{007B3D95-E125-4834-B023-76BB532787AE}" Directory_="APPDIR" Attributes="4" KeyPath="__1"/>
+    <ROW Component="__2" ComponentId="{837955A3-6A4A-4D13-AA18-AD0099A079B1}" Directory_="APPDIR" Attributes="4" KeyPath="__2"/>
+    <ROW Component="__3" ComponentId="{5730332D-81DF-492C-8981-471BB0EC1907}" Directory_="APPDIR" Attributes="4" KeyPath="__3"/>
+    <ROW Component="__4" ComponentId="{64CAA84A-BE06-49D8-BADA-681E9080F7C0}" Directory_="APPDIR" Attributes="4" KeyPath="__4"/>
+    <ROW Component="__5" ComponentId="{EF46F655-26ED-43CD-852F-CC30D1F44387}" Directory_="APPDIR" Attributes="4" KeyPath="__5"/>
+    <ROW Component="__6" ComponentId="{48CF9F8D-D515-485C-B87C-2F63C9605A54}" Directory_="APPDIR" Attributes="4" KeyPath="__6"/>
+    <ROW Component="open" ComponentId="{32B1A4E5-5783-4672-8DCE-F2D38F87728E}" Directory_="APPDIR" Attributes="4" KeyPath="open_1"/>
+    <ROW Component="open_1" ComponentId="{FE8F4D05-6AD8-4F1F-A914-B1235C4F4BD6}" Directory_="APPDIR" Attributes="4" KeyPath="open_2"/>
+    <ROW Component="open_2" ComponentId="{4E97BAE6-E3FB-4CE7-9E74-AD5A4C7D0DBE}" Directory_="APPDIR" Attributes="4" KeyPath="open_3"/>
+    <ROW Component="rdpurl.bat.FriendlyAppName" ComponentId="{51970A27-3E2B-444D-B502-F781598623D5}" Directory_="APPDIR" Attributes="4" KeyPath="rdpurl.bat.FriendlyAppName"/>
+    <ROW Component="shell" ComponentId="{005D8F3F-85B6-4736-A8A8-75AA755AA4B1}" Directory_="APPDIR" Attributes="4" KeyPath="shell_1"/>
+    <ROW Component="shell_1" ComponentId="{506806C1-8D3B-443B-BC3A-B1B977E37642}" Directory_="APPDIR" Attributes="4" KeyPath="shell_2"/>
+    <ROW Component="shell_2" ComponentId="{C6C6EC1A-A149-42FB-91FB-02302DF78B3D}" Directory_="APPDIR" Attributes="4" KeyPath="shell_3"/>
+    <ROW Component="shell_3" ComponentId="{DD5B85E0-095E-412E-8088-183C48F5E22D}" Directory_="APPDIR" Attributes="4" KeyPath="shell_4"/>
+    <ROW Component="rdp_3" ComponentId="{3609871D-E832-4595-A92B-8AB3585E9609}" Directory_="APPDIR" Attributes="4" KeyPath="rdp_3"/>
+    <ROW Component="rdp_2" ComponentId="{29D22BED-7683-45F8-B79D-A9584C98F34C}" Directory_="APPDIR" Attributes="4" KeyPath="rdp_2"/>
+    <ROW Component="rdpurl.bat_1" ComponentId="{97891879-AD6F-4EF6-9D19-AF128E4B0AC8}" Directory_="APPDIR" Attributes="0" KeyPath="rdpurl.bat" Type="0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatsComponent">
+    <ROW Feature="MainFeature" Title="MainFeature" Description="Description" Display="1" Level="1" Directory_="APPDIR" Attributes="0"/>
+    <ATTRIBUTE name="CurrentFeature" value="MainFeature"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFilesComponent">
+    <ROW File="rdpurl.bat" Component_="rdpurl.bat_1" FileName="rdp-url.bat" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\..\ProgramData\RdpUrlLauncher\rdp-url.bat" SelfReg="false"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BootstrOptComponent">
+    <ROW BootstrOptKey="GlobalOptions" DownloadFolder="[AppDataFolder][|Manufacturer]\[|ProductName]\prerequisites" Options="2"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BootstrapperUISequenceComponent">
+    <ROW Action="AI_BACKUP_AI_SETUPEXEPATH" Sequence="249"/>
+    <ROW Action="AI_RESTORE_AI_SETUPEXEPATH" Condition="AI_SETUPEXEPATH_ORIGINAL" Sequence="251"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BuildComponent">
+    <ROW BuildKey="DefaultBuild" BuildName="DefaultBuild" BuildOrder="1" BuildType="0" Languages="en" InstallationType="4" UseLargeSchema="true"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.DictionaryComponent">
+    <ROW Path="&lt;AI_DICTS&gt;ui.ail"/>
+    <ROW Path="&lt;AI_DICTS&gt;ui_en.ail"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.FragmentComponent">
+    <ROW Fragment="CommonUI.aip" Path="&lt;AI_FRAGS&gt;CommonUI.aip"/>
+    <ROW Fragment="FolderDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\FolderDlg.aip"/>
+    <ROW Fragment="MaintenanceTypeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\MaintenanceTypeDlg.aip"/>
+    <ROW Fragment="MaintenanceWelcomeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\MaintenanceWelcomeDlg.aip"/>
+    <ROW Fragment="SequenceDialogs.aip" Path="&lt;AI_THEMES&gt;classic\fragments\SequenceDialogs.aip"/>
+    <ROW Fragment="Sequences.aip" Path="&lt;AI_FRAGS&gt;Sequences.aip"/>
+    <ROW Fragment="StaticUIStrings.aip" Path="&lt;AI_FRAGS&gt;StaticUIStrings.aip"/>
+    <ROW Fragment="Themes.aip" Path="&lt;AI_FRAGS&gt;Themes.aip"/>
+    <ROW Fragment="UI.aip" Path="&lt;AI_THEMES&gt;classic\fragments\UI.aip"/>
+    <ROW Fragment="Validation.aip" Path="&lt;AI_FRAGS&gt;Validation.aip"/>
+    <ROW Fragment="VerifyRemoveDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\VerifyRemoveDlg.aip"/>
+    <ROW Fragment="VerifyRepairDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\VerifyRepairDlg.aip"/>
+    <ROW Fragment="WelcomeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\WelcomeDlg.aip"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiActionTextComponent">
+    <ROW Action="AI_DeleteLzma" Description="Deleting files extracted from archive" DescriptionLocId="ActionText.Description.AI_DeleteLzma" TemplateLocId="-"/>
+    <ROW Action="AI_DeleteRLzma" Description="Deleting files extracted from archive" DescriptionLocId="ActionText.Description.AI_DeleteLzma" TemplateLocId="-"/>
+    <ROW Action="AI_ExtractLzma" Description="Extracting files from archive" DescriptionLocId="ActionText.Description.AI_ExtractLzma" TemplateLocId="-"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiBinaryComponent">
+    <ROW Name="aicustact.dll" SourcePath="&lt;AI_CUSTACTS&gt;aicustact.dll"/>
+    <ROW Name="lzmaextractor.dll" SourcePath="&lt;AI_CUSTACTS&gt;lzmaextractor.dll"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiControlEventComponent">
+    <ROW Dialog_="WelcomeDlg" Control_="Next" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="FolderDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_INSTALL" Ordering="201"/>
+    <ROW Dialog_="FolderDlg" Control_="Back" Event="NewDialog" Argument="WelcomeDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="MaintenanceWelcomeDlg" Control_="Next" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="99"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_MAINT" Ordering="198"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="CustomizeDlg" Condition="AI_MAINT" Ordering="202"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_INSTALL" Ordering="197"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="201"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_MAINT" Ordering="101"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="ChangeButton" Event="NewDialog" Argument="CustomizeDlg" Condition="AI_MAINT" Ordering="501"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceWelcomeDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="RemoveButton" Event="NewDialog" Argument="VerifyRemoveDlg" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="601"/>
+    <ROW Dialog_="VerifyRemoveDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="RepairButton" Event="NewDialog" Argument="VerifyRepairDlg" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="601"/>
+    <ROW Dialog_="VerifyRepairDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="1"/>
+    <ROW Dialog_="VerifyRepairDlg" Control_="Repair" Event="EndDialog" Argument="Return" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="399" Options="1"/>
+    <ROW Dialog_="VerifyRemoveDlg" Control_="Remove" Event="EndDialog" Argument="Return" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="299" Options="1"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_PATCH" Ordering="201"/>
+    <ROW Dialog_="ResumeDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_RESUME" Ordering="299"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_PATCH" Ordering="199"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="PatchWelcomeDlg" Condition="AI_PATCH" Ordering="203"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCreateFolderComponent">
+    <ROW Directory_="APPDIR" Component_="APPDIR" ManualDelete="true"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCustActComponent">
+    <ROW Action="AI_BACKUP_AI_SETUPEXEPATH" Type="51" Source="AI_SETUPEXEPATH_ORIGINAL" Target="[AI_SETUPEXEPATH]"/>
+    <ROW Action="AI_DOWNGRADE" Type="19" Target="4010"/>
+    <ROW Action="AI_DeleteCadLzma" Type="51" Source="AI_DeleteLzma" Target="[AI_SETUPEXEPATH]"/>
+    <ROW Action="AI_DeleteLzma" Type="1025" Source="lzmaextractor.dll" Target="DeleteLZMAFiles"/>
+    <ROW Action="AI_DeleteRCadLzma" Type="51" Source="AI_DeleteRLzma" Target="[AI_SETUPEXEPATH]"/>
+    <ROW Action="AI_DeleteRLzma" Type="1281" Source="lzmaextractor.dll" Target="DeleteLZMAFiles"/>
+    <ROW Action="AI_DpiContentScale" Type="1" Source="aicustact.dll" Target="DpiContentScale"/>
+    <ROW Action="AI_EnableDebugLog" Type="321" Source="aicustact.dll" Target="EnableDebugLog"/>
+    <ROW Action="AI_ExtractCadLzma" Type="51" Source="AI_ExtractLzma" Target="[AI_SETUPEXEPATH]"/>
+    <ROW Action="AI_ExtractLzma" Type="1025" Source="lzmaextractor.dll" Target="ExtractLZMAFiles"/>
+    <ROW Action="AI_FindExeLzma" Type="1" Source="lzmaextractor.dll" Target="FindEXE"/>
+    <ROW Action="AI_InstallModeCheck" Type="1" Source="aicustact.dll" Target="UpdateInstallMode" WithoutSeq="true"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Type="65" Source="aicustact.dll" Target="PrepareUpgrade"/>
+    <ROW Action="AI_PRESERVE_INSTALL_TYPE" Type="65" Source="aicustact.dll" Target="PreserveInstallType"/>
+    <ROW Action="AI_RESTORE_AI_SETUPEXEPATH" Type="51" Source="AI_SETUPEXEPATH" Target="[AI_SETUPEXEPATH_ORIGINAL]"/>
+    <ROW Action="AI_RESTORE_LOCATION" Type="65" Source="aicustact.dll" Target="RestoreLocation"/>
+    <ROW Action="AI_ResolveKnownFolders" Type="1" Source="aicustact.dll" Target="AI_ResolveKnownFolders"/>
+    <ROW Action="AI_SHOW_LOG" Type="65" Source="aicustact.dll" Target="LaunchLogFile" WithoutSeq="true"/>
+    <ROW Action="AI_STORE_LOCATION" Type="51" Source="ARPINSTALLLOCATION" Target="[APPDIR]"/>
+    <ROW Action="SET_APPDIR" Type="307" Source="APPDIR" Target="[ProgramFilesFolder][Manufacturer]\[ProductName]" MultiBuildTarget="DefaultBuild:[LocalAppDataFolder]\[ProductName]"/>
+    <ROW Action="SET_SHORTCUTDIR" Type="307" Source="SHORTCUTDIR" Target="[ProgramMenuFolder][ProductName]" MultiBuildTarget="DefaultBuild:[ProgramMenuFolder]"/>
+    <ROW Action="SET_TARGETDIR_TO_APPDIR" Type="51" Source="TARGETDIR" Target="[APPDIR]"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatCompsComponent">
+    <ROW Feature_="MainFeature" Component_="APPDIR"/>
+    <ROW Feature_="MainFeature" Component_="_"/>
+    <ROW Feature_="MainFeature" Component_="NoOpenWith"/>
+    <ROW Feature_="MainFeature" Component_="__1"/>
+    <ROW Feature_="MainFeature" Component_="rdp_3"/>
+    <ROW Feature_="MainFeature" Component_="shell"/>
+    <ROW Feature_="MainFeature" Component_="New_Key"/>
+    <ROW Feature_="MainFeature" Component_="__2"/>
+    <ROW Feature_="MainFeature" Component_="RdpOpener.URL_rdp"/>
+    <ROW Feature_="MainFeature" Component_="RDPURLOpener"/>
+    <ROW Feature_="MainFeature" Component_="rdp_2"/>
+    <ROW Feature_="MainFeature" Component_="rdpurl.bat_1"/>
+    <ROW Feature_="MainFeature" Component_="shell_1"/>
+    <ROW Feature_="MainFeature" Component_="open"/>
+    <ROW Feature_="MainFeature" Component_="__3"/>
+    <ROW Feature_="MainFeature" Component_="NoOpenWith_1"/>
+    <ROW Feature_="MainFeature" Component_="RdpOpener.URL"/>
+    <ROW Feature_="MainFeature" Component_="shell_2"/>
+    <ROW Feature_="MainFeature" Component_="open_1"/>
+    <ROW Feature_="MainFeature" Component_="__4"/>
+    <ROW Feature_="MainFeature" Component_="RdpOpener.URL_1"/>
+    <ROW Feature_="MainFeature" Component_="__5"/>
+    <ROW Feature_="MainFeature" Component_="shell_3"/>
+    <ROW Feature_="MainFeature" Component_="open_2"/>
+    <ROW Feature_="MainFeature" Component_="__6"/>
+    <ROW Feature_="MainFeature" Component_="LocalSettings"/>
+    <ROW Feature_="MainFeature" Component_="URLProtocol"/>
+    <ROW Feature_="MainFeature" Component_="Software"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft"/>
+    <ROW Feature_="MainFeature" Component_="Windows"/>
+    <ROW Feature_="MainFeature" Component_="Shelll"/>
+    <ROW Feature_="MainFeature" Component_="rdpurl.bat.FriendlyAppName"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstExSeqComponent">
+    <ROW Action="AI_DOWNGRADE" Condition="AI_NEWERPRODUCTFOUND AND (UILevel &lt;&gt; 5)" Sequence="210"/>
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_STORE_LOCATION" Condition="(Not Installed) OR REINSTALL" Sequence="1501"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Condition="AI_UPGRADE=&quot;No&quot; AND (Not Installed)" Sequence="1399"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="52"/>
+    <ROW Action="AI_EnableDebugLog" Sequence="51"/>
+    <ROW Action="AI_BACKUP_AI_SETUPEXEPATH" Sequence="99" Builds="DefaultBuild"/>
+    <ROW Action="AI_RESTORE_AI_SETUPEXEPATH" Condition="AI_SETUPEXEPATH_ORIGINAL" Sequence="101" Builds="DefaultBuild"/>
+    <ROW Action="AI_DeleteCadLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (AI_INSTALL_MODE&lt;&gt;&quot;Remove&quot;) AND (NOT PATCH)" Sequence="199" Builds="DefaultBuild"/>
+    <ROW Action="AI_DeleteRCadLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (AI_INSTALL_MODE&lt;&gt;&quot;Remove&quot;) AND (NOT PATCH)" Sequence="198" Builds="DefaultBuild"/>
+    <ROW Action="AI_ExtractCadLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (AI_INSTALL_MODE&lt;&gt;&quot;Remove&quot;) AND (NOT PATCH)" Sequence="197" Builds="DefaultBuild"/>
+    <ROW Action="AI_FindExeLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (AI_INSTALL_MODE&lt;&gt;&quot;Remove&quot;) AND (NOT PATCH)" Sequence="196" Builds="DefaultBuild"/>
+    <ROW Action="AI_ExtractLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (AI_INSTALL_MODE&lt;&gt;&quot;Remove&quot;) AND (NOT PATCH)" Sequence="1549" Builds="DefaultBuild"/>
+    <ROW Action="AI_DeleteRLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (AI_INSTALL_MODE&lt;&gt;&quot;Remove&quot;) AND (NOT PATCH)" Sequence="1548" Builds="DefaultBuild"/>
+    <ROW Action="AI_DeleteLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (AI_INSTALL_MODE&lt;&gt;&quot;Remove&quot;) AND (NOT PATCH)" Sequence="6599" Builds="DefaultBuild"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstallUISequenceComponent">
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="53"/>
+    <ROW Action="AI_DpiContentScale" Sequence="52"/>
+    <ROW Action="AI_EnableDebugLog" Sequence="51"/>
+    <ROW Action="AI_PRESERVE_INSTALL_TYPE" Sequence="199"/>
+    <ROW Action="AI_BACKUP_AI_SETUPEXEPATH" Sequence="99"/>
+    <ROW Action="AI_RESTORE_AI_SETUPEXEPATH" Condition="AI_SETUPEXEPATH_ORIGINAL" Sequence="101"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiLaunchConditionsComponent">
+    <ROW Condition="((VersionNT &lt;&gt; 501) AND (VersionNT &lt;&gt; 502))" Description="[ProductName] cannot be installed on [WindowsTypeNT5XDisplay]." DescriptionLocId="AI.LaunchCondition.NoNT5X" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="(VersionNT &lt;&gt; 400)" Description="[ProductName] cannot be installed on [WindowsTypeNT40Display]." DescriptionLocId="AI.LaunchCondition.NoNT40" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="(VersionNT &lt;&gt; 500)" Description="[ProductName] cannot be installed on [WindowsTypeNT50Display]." DescriptionLocId="AI.LaunchCondition.NoNT50" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="(VersionNT &lt;&gt; 600)" Description="[ProductName] cannot be installed on [WindowsTypeNT60Display]." DescriptionLocId="AI.LaunchCondition.NoNT60" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="VersionNT" Description="[ProductName] cannot be installed on [WindowsType9XDisplay]." DescriptionLocId="AI.LaunchCondition.No9X" IsPredefined="true" Builds="DefaultBuild"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiRegsComponent">
+    <ROW Registry="ApplicationAssociationToasts" Root="1" Key="Software\Microsoft\Windows\CurrentVersion\ApplicationAssociationToasts" Name="\"/>
+    <ROW Registry="Applications" Root="0" Key="Applications" Name="\"/>
+    <ROW Registry="Applications_1" Root="1" Key="Software\Classes\Applications" Name="\"/>
+    <ROW Registry="Capabilities" Root="1" Key="Software\RdpOpener\RDP URL Opener\Capabilities" Name="\"/>
+    <ROW Registry="Classes" Root="1" Key="Software\Classes" Name="\"/>
+    <ROW Registry="CurrentVersion" Root="1" Key="Software\Microsoft\Windows\CurrentVersion" Name="\"/>
+    <ROW Registry="LocalSettings" Root="1" Key="Software\Classes\Local Settings" Name="+" Component_="LocalSettings"/>
+    <ROW Registry="Microsoft" Root="1" Key="Software\Microsoft" Name="\"/>
+    <ROW Registry="Microsoft_1" Root="1" Key="Software\Classes\Local Settings\Software\Microsoft" Name="+" Component_="Microsoft"/>
+    <ROW Registry="MuiCache" Root="1" Key="Software\Classes\Local Settings\Software\Microsoft\Windows\Shell\MuiCache" Name="\"/>
+    <ROW Registry="New_Key" Root="1" Key="Software\Classes\Applications\rdp-url.bat\shell\open" Name="+" Component_="New_Key"/>
+    <ROW Registry="NoOpenWith" Root="0" Key="Applications\RdpOpener" Name="NoOpenWith" Component_="NoOpenWith"/>
+    <ROW Registry="NoOpenWith_1" Root="1" Key="Software\Classes\Applications\rdp-url.bat" Name="NoOpenWith" Component_="NoOpenWith_1"/>
+    <ROW Registry="RDPURLOpener" Root="1" Key="Software\RegisteredApplications" Name="RDP URL Opener" Value="SOFTWARE\RdpOpener\RDP URL Opener\Capabilities" Component_="RDPURLOpener"/>
+    <ROW Registry="RDPURLOpener_1" Root="1" Key="Software\RdpOpener\RDP URL Opener" Name="\"/>
+    <ROW Registry="RdpLauncher.URL" Root="1" Key="Software\Classes\RdpOpener.URL" Name="+" Component_="RdpOpener.URL_1"/>
+    <ROW Registry="RdpOpener.URL" Root="0" Key="RdpOpener.URL" Name="+" Component_="RdpOpener.URL"/>
+    <ROW Registry="RegisteredApplications" Root="1" Key="Software\RegisteredApplications" Name="\"/>
+    <ROW Registry="Shelll" Root="1" Key="Software\Classes\Local Settings\Software\Microsoft\Windows\Shell" Name="+" Component_="Shelll"/>
+    <ROW Registry="Software" Root="1" Key="Software" Name="\"/>
+    <ROW Registry="Software_1" Root="1" Key="Software\Classes\Local Settings\Software" Name="+" Component_="Software"/>
+    <ROW Registry="SupportedProtocols" Root="0" Key="Applications\RdpOpener\SupportedProtocols" Name="\"/>
+    <ROW Registry="URLAssociations" Root="1" Key="Software\RdpOpener\RDP URL Opener\Capabilities\URLAssociations" Name="\"/>
+    <ROW Registry="URLProtocol" Root="0" Key="rdp" Name="URL Protocol" Component_="URLProtocol"/>
+    <ROW Registry="Windows" Root="1" Key="Software\Microsoft\Windows" Name="\"/>
+    <ROW Registry="RdpOpener" Root="0" Key="Applications\RdpOpener" Name="\"/>
+    <ROW Registry="RdpOpener.URL_2" Root="1" Key="Software\Microsoft\Windows\CurrentVersion\ApplicationAssociationToasts" Name="RdpOpener.URL_rdp" Value="#0" Component_="RdpOpener.URL_rdp" VirtualValue="#"/>
+    <ROW Registry="RdpOpener_1" Root="1" Key="Software\RdpOpener" Name="\" />
+    <ROW Registry="Windows_1" Root="1" Key="Software\Classes\Local Settings\Software\Microsoft\Windows" Name="+" Component_="Windows"/>
+    <ROW Registry="_" Root="0" Key="Applications\RdpOpener" Component_="_"/>
+    <ROW Registry="__1" Root="0" Key="Applications\RdpOpener\shell\open\command" Value="&quot;[#rdpurl.bat]&quot; &quot;%1&quot;" Component_="__1"/>
+    <ROW Registry="__2" Root="1" Key="Software\Classes\Applications\rdp-url.bat\shell\open\command" Value="&quot;[#rdpurl.bat]&quot; &quot;%1&quot;" Component_="__2"/>
+    <ROW Registry="__3" Root="1" Key="Software\Classes\RdpOpener.URL\shell\open\command" Value="&quot;[#rdpurl.bat]&quot; &quot;%1&quot;" Component_="__3"/>
+    <ROW Registry="__4" Root="0" Key="RdpOpener.URL\shell\open\command" Value="&quot;[#rdpurl.bat]&quot; &quot;%1&quot;" Component_="__4"/>
+    <ROW Registry="__5" Root="1" Key="Software\Classes\Applications\rdp-url.bat" Component_="__5"/>
+    <ROW Registry="__6" Root="0" Key="rdp\shell\open\command" Value="&quot;[#rdpurl.bat]&quot; &quot;%1&quot;" Component_="__6"/>
+    <ROW Registry="command" Root="0" Key="Applications\RdpOpener\shell\open\command" Name="\"/>
+    <ROW Registry="command_1" Root="1" Key="Software\Classes\Applications\rdp-url.bat\shell\open\command" Name="\"/>
+    <ROW Registry="command_2" Root="1" Key="Software\Classes\RdpOpener.URL\shell\open\command" Name="\"/>
+    <ROW Registry="command_3" Root="0" Key="RdpOpener.URL\shell\open\command" Name="\"/>
+    <ROW Registry="command_4" Root="0" Key="rdp\shell\open\command" Name="\"/>
+    <ROW Registry="open" Root="0" Key="Applications\RdpOpener\shell\open" Name="\"/>
+    <ROW Registry="open_1" Root="1" Key="Software\Classes\RdpOpener.URL\shell\open" Name="+" Component_="open"/>
+    <ROW Registry="open_2" Root="0" Key="RdpOpener.URL\shell\open" Name="+" Component_="open_1"/>
+    <ROW Registry="open_3" Root="0" Key="rdp\shell\open" Name="+" Component_="open_2"/>
+    <ROW Registry="rdp" Root="0" Key="rdp" Name="\"/>
+    <ROW Registry="rdpurl.bat" Root="1" Key="Software\Classes\Applications\rdp-url.bat" Name="\"/>
+    <ROW Registry="rdpurl.bat.FriendlyAppName" Root="1" Key="Software\Classes\Local Settings\Software\Microsoft\Windows\Shell\MuiCache" Name="[#rdpurl.bat].FriendlyAppName" Value="RDP URL Opener" Component_="rdpurl.bat.FriendlyAppName"/>
+    <ROW Registry="shell" Root="0" Key="Applications\RdpOpener\shell" Name="\"/>
+    <ROW Registry="shell_1" Root="1" Key="Software\Classes\Applications\rdp-url.bat\shell" Name="+" Component_="shell"/>
+    <ROW Registry="shell_2" Root="1" Key="Software\Classes\RdpOpener.URL\shell" Name="+" Component_="shell_1"/>
+    <ROW Registry="shell_3" Root="0" Key="RdpOpener.URL\shell" Name="+" Component_="shell_2"/>
+    <ROW Registry="shell_4" Root="0" Key="rdp\shell" Name="+" Component_="shell_3"/>
+    <ROW Registry="rdp_3" Root="0" Key="Applications\RdpOpener\SupportedProtocols" Name="rdp" Component_="rdp_3"/>
+    <ROW Registry="rdp_2" Root="1" Key="Software\RdpOpener\RDP URL Opener\Capabilities\URLAssociations" Name="rdp" Value="RdpOpener.URL" Component_="rdp_2"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiThemeComponent">
+    <ATTRIBUTE name="UsedTheme" value="classic"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiUpgradeComponent">
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMin="0.0.1" VersionMax="[|ProductVersion]" Attributes="257" ActionProperty="OLDPRODUCTS"/>
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMin="[|ProductVersion]" Attributes="2" ActionProperty="AI_NEWERPRODUCTFOUND"/>
+  </COMPONENT>
+</DOCUMENT>
